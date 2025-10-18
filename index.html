@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio - Kauê Gomes</title>
 
-  
+  <!-- Ícones do Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
@@ -14,6 +14,10 @@
       padding: 0;
       box-sizing: border-box;
       font-family: "Poppins", sans-serif;
+    }
+
+    html {
+      scroll-behavior: smooth; /* Rolagem suave */
     }
 
     body {
@@ -28,6 +32,8 @@
       padding: 20px 0;
       position: sticky;
       top: 0;
+      z-index: 1000; /* Garante que o header fica por cima */
+      box-shadow: 0 2px 10px rgba(0,0,0,.12);
     }
 
     nav ul {
@@ -49,6 +55,11 @@
       color: #00adb5;
     }
 
+    /* Compensa altura do header ao clicar nos links */
+    section {
+      scroll-margin-top: 90px;
+    }
+
     section#sobre {
       text-align: center;
       padding: 60px 20px;
@@ -66,7 +77,7 @@
       color: #555;
     }
 
-    
+    /* ======= Seção de Cursos ======= */
     section#cursos {
       background-color: #fff;
       padding: 60px 20px;
@@ -104,7 +115,7 @@
       border-radius: 10px;
     }
 
-    
+    /* ======= Seção de Experiências ======= */
     section#experiencias {
       background: #fdfdfd;
       padding: 60px 20px;
@@ -168,7 +179,7 @@
       color: #00adb5;
     }
 
-   
+    /* ======= Seção de Contato ======= */
     section#contato {
       background-color: #1e1e2f;
       color: white;
@@ -231,20 +242,17 @@
 
   <section id="cursos">
     <h2>Meus Cursos</h2>
-
     <div class="grid-cursos">
       <div class="curso">
         <img src="https://i.postimg.cc/Gh2WdBCb/Java.png" alt="Curso Java">
         <h3>JAVA</h3>
         <p>Curso de desenvolvimento em Java com foco em orientação a objetos e aplicações web.</p>
       </div>
-
       <div class="curso">
         <img src="https://i.postimg.cc/FRrPpqFz/Oracle-Logo.png" alt="Curso PL/SQL">
         <h3>PL/SQL</h3>
         <p>Curso voltado ao domínio de banco de dados Oracle e linguagem PL/SQL.</p>
       </div>
-
       <div class="curso">
         <img src="https://i.postimg.cc/bwRVnp8n/My-SQL-Logo-wine.png" alt="Curso MySQL">
         <h3>MySQL</h3>
@@ -253,17 +261,15 @@
     </div>
   </section>
 
-
   <section id="experiencias">
     <h2>Experiências</h2>
-
     <div class="exp-timeline">
       <div class="exp-item">
         <div class="exp-top">
           <span><i class="fa-solid fa-briefcase"></i> Estagiário de TI — VR COMERCIO</span>
           <span class="periodo"><i class="fa-regular fa-calendar"></i> 2024–2025</span>
         </div>
-        <p>Atuação no suporte a sistemas de automação comercial.
+        <p>Atuação no suporte a sistemas de automação comercial.</p>
         <div class="exp-tags">
           <span>My SQL</span><span>HELP | DESK</span><span>Suporte</span>
         </div>
